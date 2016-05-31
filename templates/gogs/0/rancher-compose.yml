@@ -22,13 +22,13 @@
       label: "Database name"
       type: "string"
       required: true
-      default: "lportal"
+      default: "gogs"
     - variable: MYSQL_USER
       description: "Login name for the database user"
       label: "Database login name"
       type: "string"
       required: true
-      default: "liferay"
+      default: "gogs"
     - variable: MYSQL_PASSWORD
       description: "Password for the database user"
       label: "Database password"
