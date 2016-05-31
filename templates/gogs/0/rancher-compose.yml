@@ -5,29 +5,41 @@
   uuid: gogs-0
   minimum_rancher_version: v0.51.0
   questions:
-    - variable: public_port
-      description: "public port to access the mysql server"
-      label: "Public Port"
-      required: true
-      default: "3306"
-      type: "int"
-    - variable: http_port
+    - variable: HTTP_PORT
       description: "http port to access gogs webui"
       label: "Http Port"
       required: true
       default: "10080" 
       type: "int"
-    - variable: ssh_port
+    - variable: SSH_PORT
       description: "ssh port to access gogs cli"
       label: "Ssh Port"
       required: true
       default: "222"
       type: "int"
-    - variable: mysql_password
-      description: "mysql root password"
-      label: "Mysql Password"
-      required: true
-      default: "password"
+    - variable: MYSQL_DATABASE
+      description: "Name of the database"
+      label: "Database name"
       type: "string"
+      required: true
+      default: "lportal"
+    - variable: MYSQL_USER
+      description: "Login name for the database user"
+      label: "Database login name"
+      type: "string"
+      required: true
+      default: "liferay"
+    - variable: MYSQL_PASSWORD
+      description: "Password for the database user"
+      label: "Database password"
+      type: "string"
+      required: true
+      default: "secret"
+    - variable: MYSQL_ROOT_PASSWORD
+      description: "Password for the database root user"
+      label: "Database root password"
+      type: "string"
+      required: true
+      default: "secret"
 
 gogs:
