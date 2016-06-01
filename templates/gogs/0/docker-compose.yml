@@ -9,6 +9,8 @@ gogs:
     io.rancher.sidekicks: gogs-data
   volumes_from:
     - gogs-data
+  environment:
+    GOGS_APP_NAME: ${GOGS_APP_NAME}
 
 gogs-data:
   labels:

@@ -41,8 +41,8 @@
       type: "string"
       required: true
       default: "secret"
-    - variable: APP_NAME
-      description: "The title of your gogs instance"
+    - variable: GOGS_APP_NAME
+      description: "App name which shows on every page title"
       label: "App name"
       type: "string"
       required: true
