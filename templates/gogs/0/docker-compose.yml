@@ -7,7 +7,7 @@ gogs:
     - mysql:db
   labels:
     io.rancher.sidekicks: gogs-data
-  volumes-from:
+  volumes_from:
     - gogs-data
 
 gogs-data:
