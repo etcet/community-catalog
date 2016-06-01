@@ -15,7 +15,7 @@
       description: "ssh port to access gogs cli"
       label: "Ssh Port"
       required: true
-      default: "222"
+      default: "10022"
       type: "int"
     - variable: MYSQL_DATABASE
       description: "Name of the database"
