@@ -1,5 +1,5 @@
 gogs:
-  image: gogs/gogs
+  image: gogs
   ports:
     - ${HTTP_PORT}:3000
     - ${SSH_PORT}:22
@@ -15,7 +15,7 @@ gogs-data:
     io.rancher.container.start_once: 'true'
   entrypoint:
   - /bin/true
-  image: gogs/gogs
+  image: gogs
   volumes:
   - /data
 

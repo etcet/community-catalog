@@ -41,5 +41,11 @@
       type: "string"
       required: true
       default: "secret"
+    - variable: APP_NAME
+      description: "The title of your gogs instance"
+      label: "App name"
+      type: "string"
+      required: true
+      default: "Gogs: Go Git Service"
 
 gogs:
