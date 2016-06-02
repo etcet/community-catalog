@@ -47,5 +47,12 @@
       type: "string"
       required: true
       default: "Gogs: Go Git Service"
+    - variable: GOGS_DOMAIN
+      description: "Domain name (e.g. example.com)"
+      label: "Domain name"
+      type: "string"
+      required: true
+      default: "localhost"
+
 
 gogs:
