@@ -11,6 +11,10 @@ gogs:
     - gogs-data
   environment:
     GOGS_APP_NAME: ${GOGS_APP_NAME}
+    GOGS_DOMAIN: ${GOGS_DOMAIN}
+    MYSQL_DATABASE: ${MYSQL_DATABASE}
+    MYSQL_USER: ${MYSQL_USER}
+    MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 
 gogs-data:
   labels:
